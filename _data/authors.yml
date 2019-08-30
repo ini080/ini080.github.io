@@ -22,7 +22,7 @@ ini080:
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    #facebook:       <username>
+    facebook:       <username>
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
