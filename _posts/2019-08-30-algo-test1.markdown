@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Algo test1"
+subtitle:   "백준꺼야"
+categories: Algorithm
+tags: BOJ
+---
