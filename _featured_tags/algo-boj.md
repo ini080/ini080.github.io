@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: React
-slug: react
-category: video
+title: BAEKJOON
+slug: BOJ
+category: Algorithm
 menu: false
 order: 1
 ---
