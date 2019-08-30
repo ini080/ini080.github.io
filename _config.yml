@@ -26,8 +26,7 @@ author:
   email:             ini080@naver.com
 
 # Fallback image and color
-image:               /assets/img/nap.jpg
-color:               '#000000'
+color:               '#293462'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 font_heading:        "'Lato', 'Sans-serif'"
