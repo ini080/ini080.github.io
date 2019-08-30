@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "[강좌]React로 웹 어플리케이션 빌드하기"
-subtitle:   "React로 웹 어플리케이션 빌드하기"
-categories: devlog
-tags: javascript react tutorial
+title:  "Algorithm Test하기"
+subtitle:   "잘되나여?"
+categories: Algorithm
+tags: SW
 ---
 
 React로 웹 어플리케이션 빌드하기 동영상강좌를 촬영하고있습니다.
