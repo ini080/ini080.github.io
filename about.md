@@ -16,8 +16,8 @@ order: 10
 - **Program Language** :: Java, Python, Javascript
 - **Web Framework** :: Spring, Springboot, Node.js, Vue.js
 - **Database** ::  MySQL , Firebase
-- **SCM** :: Git, Github,
-- **Another** :: Jira, AWS , EC2
+- **SCM** :: Git, Github
+- **Other** :: Jira, AWS , EC2
 -------
 
 ## Activities
