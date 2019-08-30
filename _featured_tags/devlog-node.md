@@ -4,6 +4,6 @@ title: Node.js
 slug: nodejs
 category: devlog
 menu: false
-order: 1
-header-img: "/img/node-logo.png"
+order: 4
+header-img: "/img/post-logo/node-logo.png"
 ---

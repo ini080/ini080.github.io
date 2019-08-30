@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: BAEKJOON
-slug: BOJ
+title: Programmers
+slug: programmers
 category: Algorithm
 menu: false
-order: 2
+order: 3
 ---

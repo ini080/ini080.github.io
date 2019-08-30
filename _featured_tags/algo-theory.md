@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: BAEKJOON
-slug: BOJ
+title: 이론공부
+slug: theory
 category: Algorithm
 menu: false
-order: 2
+order: 4
 ---

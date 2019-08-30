@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Things
-slug: things
-category: review
+title: Site
+slug: site
+category: tip
 menu: false
 order: 1
 ---
