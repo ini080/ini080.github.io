@@ -9,8 +9,9 @@ order: 10
 - Gwangju. South Korea.
 
 ## Links
-- Email : ini080@naver.comma
 - [Github](https://github.com/ini080)
+- [Portfolio](http://13.124.104.44:8080/)
+
 
 ## Skills
 - **Program Language** :: Java, Python, Javascript
@@ -20,27 +21,36 @@ order: 10
 - **Other** :: Jira, AWS , EC2
 -------
 
-## Activities
 ### Github
 ![Github Image](https://ghchart.rshah.org/ini080)
-
-### 2019
-- 2019.05.20 :: SafeFood Project ( Springboot, MySQL, Javascript, Vue.js )
-
-### 2018
-- 2018.12.10 ~ :: [SSAFY 1기]삼성 청년 소프트웨어 아카데미(SSAFY 1기) 입학.
 
 -------
 
 ## Projects
-### Auto-Parking Algorithm
-- embedded system. Arduino. C
-- [Code](https://github.com/ini080)
 
-### SafeFood - Web Application
+### 2019
+#### WebMobile Project
+- Java. Spring. Springboot. FireBase. Vue.js. AWS(EC2)
+- [Image]('./assets/img/aboutme/WebMobile.jpg)
+- [Link](https://github.com/ini080)
+
+#### KAKAO Chatbot - Kakao I Open Builder
+- Node.js. FireBase
+- [Link](https://github.com/ini080)
+
+
+#### SafeFood - Web Application
 - Java. Spring. Springboot. MySQL. Vue.js
-- [Code](https://github.com/ini080)
-- [Video](https://www.youtube.com/)
+- [Link](https://github.com/ini080)
+
+### 2018
+#### Auto-Parking Algorithm
+- embedded system. Arduino. C
+- [Link](https://github.com/ini080)
+
+#### Smart Blind
+- embedded system. Arduino. C
+- [Link](https://github.com/ini080)
 
 -------
 
@@ -51,5 +61,5 @@ order: 10
 
 
 ## Education
-- 2013.03 - 2019.02 :: Computer Engineering, Engineering college, Chosun University
-- 2018.12 - 2019.12 :: Samsung Softeware Academy
+- 2013.03 - 2019.02 :: 조선대학교 컴퓨터공학과
+- 2018.12 - 2019.12 :: [SSAFY 1기]삼성 청년 소프트웨어 아카데미(SSAFY 1기) 입학.
