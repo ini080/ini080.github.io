@@ -18,7 +18,7 @@ tagline:             정건's 블로그
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  반갑습니다
+  :)
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
