@@ -1,92 +1,99 @@
 ---
 layout: post
-title:  "[2017 kakako 1차] 비밀지도"
-subtitle:   "비밀지도"
+title:  "[2017 kakako 1차] 오픈채팅방"
+subtitle:   "오픈채팅방"
 categories: Algorithm
 tags: programmers
 ---
 
-## 비밀지도
-네오는 평소 프로도가 비상금을 숨겨놓는 장소를 알려줄 비밀지도를 손에 넣었다. 그런데 이 비밀지도는 숫자로 암호화되어 있어 위치를 확인하기 위해서는 암호를 해독해야 한다. 다행히 지도 암호를 해독할 방법을 적어놓은 메모도 함께 발견했다.
+## 오픈채팅방
 
-지도는 한 변의 길이가 n인 정사각형 배열 형태로, 각 칸은 공백(" ) 또는벽(#") 두 종류로 이루어져 있다.
-전체 지도는 두 장의 지도를 겹쳐서 얻을 수 있다. 각각 지도 1과 지도 2라고 하자. 지도 1 또는 지도 2 중 어느 하나라도 벽인 부분은 전체 지도에서도 벽이다. 지도 1과 지도 2에서 모두 공백인 부분은 전체 지도에서도 공백이다.
-지도 1과 지도 2는 각각 정수 배열로 암호화되어 있다.
-암호화된 배열은 지도의 각 가로줄에서 벽 부분을 1, 공백 부분을 0으로 부호화했을 때 얻어지는 이진수에 해당하는 값의 배열이다.
+카카오톡 오픈채팅방에서는 친구가 아닌 사람들과 대화를 할 수 있는데, 본래 닉네임이 아닌 가상의 닉네임을 사용하여 채팅방에 들어갈 수 있다.
 
+신입사원인 김크루는 카카오톡 오픈 채팅방을 개설한 사람을 위해, 다양한 사람들이 들어오고, 나가는 것을 지켜볼 수 있는 관리자창을 만들기로 했다. 채팅방에 누군가 들어오면 다음 메시지가 출력된다.
 
-네오가 프로도의 비상금을 손에 넣을 수 있도록, 비밀지도의 암호를 해독하는 작업을 도와줄 프로그램을 작성하라.
+[닉네임]님이 들어왔습니다.
 
-### 입력 형식
-입력으로 지도의 한 변 크기 n 과 2개의 정수 배열 arr1, arr2가 들어온다.
+채팅방에서 누군가 나가면 다음 메시지가 출력된다.
 
-1 ≦ n ≦ 16
-arr1, arr2는 길이 n인 정수 배열로 주어진다.
-정수 배열의 각 원소 x를 이진수로 변환했을 때의 길이는 n 이하이다. 즉, 0 ≦ x ≦ 2n - 1을 만족한다.
+[닉네임]님이 나갔습니다.
 
-### 출력 형식
-원래의 비밀지도를 해독하여 '#', 공백으로 구성된 문자열 배열로 출력하라.
+채팅방에서 닉네임을 변경하는 방법은 다음과 같이 두 가지이다.
 
-### 입출력 예제
-매개변수	값
-n	5
-arr1	[9, 20, 28, 18, 11]
-arr2	[30, 1, 21, 17, 28]
+채팅방을 나간 후, 새로운 닉네임으로 다시 들어간다.
+채팅방에서 닉네임을 변경한다.
+닉네임을 변경할 때는 기존에 채팅방에 출력되어 있던 메시지의 닉네임도 전부 변경된다.
 
-출력	["#####","# # #", "### #", "# ##", "#####"]
+예를 들어, 채팅방에 Muzi와 Prodo라는 닉네임을 사용하는 사람이 순서대로 들어오면 채팅방에는 다음과 같이 메시지가 출력된다.
 
-매개변수	값
-n	6
-arr1	[46, 33, 33 ,22, 31, 50]
-arr2	[27 ,56, 19, 14, 14, 10]
+Muzi님이 들어왔습니다.
+Prodo님이 들어왔습니다.
 
-출력	["######", "### #", "## ##", " #### ", " #####", "### # "]
+채팅방에 있던 사람이 나가면 채팅방에는 다음과 같이 메시지가 남는다.
 
+Muzi님이 들어왔습니다.
+Prodo님이 들어왔습니다.
+Muzi님이 나갔습니다.
+
+Muzi가 나간후 다시 들어올 때, Prodo 라는 닉네임으로 들어올 경우 기존에 채팅방에 남아있던 Muzi도 Prodo로 다음과 같이 변경된다.
+
+Prodo님이 들어왔습니다.
+Prodo님이 들어왔습니다.
+Prodo님이 나갔습니다.
+Prodo님이 들어왔습니다.
+
+채팅방은 중복 닉네임을 허용하기 때문에, 현재 채팅방에는 Prodo라는 닉네임을 사용하는 사람이 두 명이 있다. 이제, 채팅방에 두 번째로 들어왔던 Prodo가 Ryan으로 닉네임을 변경하면 채팅방 메시지는 다음과 같이 변경된다.
+
+Prodo님이 들어왔습니다.
+Ryan님이 들어왔습니다.
+Prodo님이 나갔습니다.
+Prodo님이 들어왔습니다.
+
+채팅방에 들어오고 나가거나, 닉네임을 변경한 기록이 담긴 문자열 배열 record가 매개변수로 주어질 때, 모든 기록이 처리된 후, 최종적으로 방을 개설한 사람이 보게 되는 메시지를 문자열 배열 형태로 return 하도록 solution 함수를 완성하라.
+
+### 제한사항
+record는 다음과 같은 문자열이 담긴 배열이며, 길이는 1 이상 100,000 이하이다.
+다음은 record에 담긴 문자열에 대한 설명이다.
+모든 유저는 [유저 아이디]로 구분한다.
+[유저 아이디] 사용자가 [닉네임]으로 채팅방에 입장 - Enter [유저 아이디] [닉네임] (ex. Enter uid1234 Muzi)
+[유저 아이디] 사용자가 채팅방에서 퇴장 - Leave [유저 아이디] (ex. Leave uid1234)
+[유저 아이디] 사용자가 닉네임을 [닉네임]으로 변경 - Change [유저 아이디] [닉네임] (ex. Change uid1234 Muzi)
+첫 단어는 Enter, Leave, Change 중 하나이다.
+각 단어는 공백으로 구분되어 있으며, 알파벳 대문자, 소문자, 숫자로만 이루어져있다.
+유저 아이디와 닉네임은 알파벳 대문자, 소문자를 구별한다.
+유저 아이디와 닉네임의 길이는 1 이상 10 이하이다.
+채팅방에서 나간 유저가 닉네임을 변경하는 등 잘못 된 입력은 주어지지 않는다.
+
+### 입출력 예
+record	result
+["Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"]	["Prodo님이 들어왔습니다.", "Ryan님이 들어왔습니다.", "Prodo님이 나갔습니다.", "Prodo님이 들어왔습니다."]
 
 ## Solution
 
-StringBuilder와 Integer.toBinaryString 을 이용하여 배열을 2진수의 맵으로 만든다음 두개를 비교하여 다른 곳은 "#" 으로 바꾸어 처리하였다.
+HashMap 을 이용하여 아이디에 해당하는 닉네임을 먼저 저장한다음 Enter와 Leave에 대해서 출력을 설정해 주었다.
+
 
 ```java
-class Solution {
-  public String[] solution(int n, int[] arr1, int[] arr2) {
-      String N = n+"";
-		StringBuilder sb1 = new StringBuilder();
-		StringBuilder sb2 = new StringBuilder();		
-		for(int i = 0 ; i < n; i++)
-		{
-			if( !Integer.toBinaryString(arr1[i]).equals(N) ){
-				for(int j = 0; j < n - Integer.toBinaryString(arr1[i]).length(); j++)
-				{
-					sb1.append("0");
-				}
-			}
-			sb1.append(Integer.toBinaryString(arr1[i]));
-
-			if( !Integer.toBinaryString(arr2[i]).equals(N) ){
-				for(int j = 0; j < n - Integer.toBinaryString(arr2[i]).length(); j++)
-				{
-					sb2.append("0");
-				}
-			}
-			sb2.append(Integer.toBinaryString(arr2[i]));
-		}
-
-		StringBuilder sb3 = new StringBuilder();
-		for(int i = 0; i < sb1.length(); i++)
-		{
-			if( sb1.charAt(i) == '1' || sb2.charAt(i) == '1') sb3.append("#");
-			else {
-				sb3.append(" ");
-			}
-		}
-		String[] answer = new String[n];
-		for(int i = 0 ; i < n ; i++)
-		{
-			answer[i]=sb3.substring(0, n);
-			sb3.delete(0,n);
-		}
-		return answer;
+public static String[] solution(String[] record) {
+  HashMap<String, String> map = new HashMap<>();
+  
+  for(int i = 0 ; i < record.length; i++)
+  {
+    String [] token = record[i].split(" ");
+    if( token.length >2 ) map.put(token[1], token[token.length-1]);
   }
+
+  List<String> list = new ArrayList<>();
+  for(int i = 0; i < record.length; i++)
+  {
+    String [] token = record[i].split(" ");
+    if(token[0].equals("Enter")) list.add(map.get(token[1]) + "님이 들어왔습니다.");
+    else if ( token[0].equals("Leave") ) list.add(map.get(token[1]) + "님이 나갔습니다.");
+  }
+  String [] Answer = new String[list.size()];
+
+  for(int i = 0; i < list.size(); i++) Answer[i] = list.get(i);
+  System.out.println(Arrays.toString(Answer));
+    return Answer;
 }
 ```
