@@ -23,8 +23,7 @@ tags: theory
 * 순열은 문자열의 길이이 따라 n! 로 시간이 걸리게 된다.
   문자열의 길이가 20, 30 개가 된다면 시간이 굉장히 오래 걸리게 된다.
 
-출처 : https://118k.tistory.com/267
-
+출처 : [https://118k.tistory.com/267 ](https://118k.tistory.com/267)
 ```java
 public class Permutation {
     public static void main(String[] args) {
