@@ -32,21 +32,14 @@ static void powerSet(int[] arr, boolean[] visited, int n, int idx) {
 }
 ```
 
-
-
-<결과>
+<h3>결과</h3>
 
 ```java
-static void powerSet(int[] arr, boolean[] visited, int n, int idx) {
-    if(idx == n) {
-        print(arr, visited, n);
-        return;
-    }
-
-    visited[idx] = false;
-    powerSet(arr, visited, n, idx + 1);
-
-    visited[idx] = true;
-    powerSet(arr, visited, n, idx + 1);
-}
+3
+2
+2 3
+1
+1 3
+1 2
+1 2 3
 ```
