@@ -15,6 +15,8 @@ tags: theory
 
 => 공집합 + 1개의 원소를 가지는 집합 + 2개의 원소를 가지는 집합 + 3개의 원소를 가지는 집합 => 각각은 조합 원소의 값과 같음 (3C0+3C1+3C2+3C3)
 
+<JAVA>
+
 ```java
 static void powerSet(int[] arr, boolean[] visited, int n, int idx) {
     if(idx == n) {
