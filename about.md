@@ -29,7 +29,7 @@ order: 10
 ## Projects
 
 ### 2019
-#### WebMobile Project
+#### WebMobile Project - 반응형 웹
 - Java. Spring. Springboot. FireBase. Vue.js. AWS(EC2)
 - [Image]('./assets/img/aboutme/WebMobile.jpg)
 - [Link](https://github.com/ini080)
