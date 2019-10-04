@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "DB"
+title:  "DataBase"
 subtitle:   "DB"
 categories: Study
 tags: DB
