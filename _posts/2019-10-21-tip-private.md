@@ -60,7 +60,6 @@ Git,Jira를 통해 협업과 형상관리 역량을 키움.
 6. AI 
 7. 안드로이드
 
-
 ## 사용 가능 언어
 주로 Java . Jsp , Vue
 Python, Node
