@@ -1,9 +1,4 @@
----
-layout: post
-title:  "Private"
-subtitle:   "private"
-categories: tip
----
+
 
 ## 자기소개
 
