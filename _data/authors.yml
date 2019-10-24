@@ -59,7 +59,7 @@ ini080:
     # paypal:          <username>
     email:           mailto:ini080@naver.com
     #rss:             https://ini080.github.io/feed.xml
-    Portfolio : http://13.124.104.44:8080
+    Portfolio : http://52.79.93.171:8080/
 # Another author
 mdo:
   name:              <firtname> <lastname>

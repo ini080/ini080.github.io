@@ -10,7 +10,7 @@ order: 10
 
 ## Links
 - [Github](https://github.com/ini080)
-- [Portfolio](http://13.124.104.44:8080/)
+- [Portfolio](http://52.79.93.171:8080/)
 
 
 ## Skills
